@@ -1,2 +1,3 @@
  docker run -it --name ubuntu_16 --hostname ubuntu_16 ubuntu:16.04 /bin/bash - יוצר משנה לי את השם של קובץ 
 apt-get install autoconf automake libtool - הבחור שכתב את הרםוזטורי שעובדים עליו בשיעור הררראשון אומר שבשביל להריץ את הסקריפט הראשון צאיך להריץ את האוטוג'ן הזה
+ for i in $( docker ps -a|awk '{print $NF}'|grep -v NAMES) ;do docker stop $i && docker rm -v $i ; done  - nמוחק את כל הקונטיינרם
