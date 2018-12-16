@@ -1,3 +1,476 @@
  docker run -it --name ubuntu_16 --hostname ubuntu_16 ubuntu:16.04 /bin/bash - יוצר משנה לי את השם של קובץ 
 apt-get install autoconf automake libtool - הבחור שכתב את הרםוזטורי שעובדים עליו בשיעור הררראשון אומר שבשביל להריץ את הסקריפט הראשון צאיך להריץ את האוטוג'ן הזה
  for i in $( docker ps -a|awk '{print $NF}'|grep -v NAMES) ;do docker stop $i && docker rm -v $i ; done  - nמוחק את כל הקונטיינרם
+
+
+  1  sudo su -
+    2  cd ~
+    3  ll
+    4  ls
+    5  vi hosts
+    6  vi docker_pull_run_playbook.yml
+    7  vi docker_push_playbook.yml
+    8  ls
+    9  su - jenkins
+   10  sudo su - lenkins
+   11  pwd
+   12  sudo su - jenkins
+   13  ps -fe
+   14  docker ps
+   15  docker images
+   16  exit
+   17  ls
+   18  apt-get update
+   19  sudo apt-get update
+   20  sudo apt-get upgrade
+   21  ps -fe
+   22  nestat -plantu
+   23  sudo nestat -plantu
+   24  sudo netstat -plantu
+   25  cd /opt/
+   26  ls
+   27  sudo wget https://download.sonatype.com/nexus/3/latest-unix.tar.gz 
+   28  sudo tar -xvzf latest-unix.tar.gz
+   29  ll
+   30  sudo ln -s /opt/nexus-3.13.0-01/bin/nexus /etc/init.d/nexus
+   31  cd /etc/init.d
+   32  sudo update-rc.d nexus defaults
+   33  sudo service nexus start 
+   34  sudo service nexus start
+   35  cd /tmp
+   36  ls
+   37  cd /tmp
+   38  ls
+   39  wget -O https://releases.hashicorp.com/terraform/0.11.7/terraform_0.11.7_linux_amd64.zip
+   40  sudo wget https://releases.hashicorp.com/terraform/0.11.7/terraform_0.11.7_linux_amd64.zip
+   41  ls
+   42  sudo mv terraform_0.11.7_linux_amd64.zip /opt/
+   43  cd /opt
+   44  ls
+   45  ls -la
+   46  sudo unzip terraform_0.11.7_linux_amd64.zip 
+   47  ls
+   48  sudo cd terrraform
+   49  cd terrraform
+   50  cd /opt
+   51  ls -la
+   52  cd ~
+   53  ls
+   54  pwd
+   55  /opt/terraform init /home/ubuntu
+   56  ls
+   57  more hosts 
+   58  ls
+   59  ansible
+   60  ls
+   61  mkdir terraform
+   62  cd terraform/
+   63  ls
+   64  vi terraform_varfile
+   65  vi test_vm.tf
+   66  vi user_data.txt
+   67  /opt/terraform init /home/ubuntu/terraform
+   68  vi test_vm.tf 
+   69  /opt/terraform init /home/ubuntu/terraform
+   70  vi user_data.txt
+   71  vi test_vm.tf 
+   72  /opt/terraform init /home/ubuntu/terraform
+   73  ls
+   74  vi terraform.tfvars
+   75  terraform
+   76  sudo cp /tmp/terraform /usr/local/bin
+   77  sudo cp /opt/terraform /usr/local/bin
+   78  terraform
+   79  sudo apt-get awscli
+   80  sudo apt-get install awscli
+   81  awscli
+   82  aws
+   83  cd ..
+   84  ls
+   85  ls -la
+   86  mkdir .aws
+   87  cd .a
+   88  cd .aws
+   89  ls -la
+   90  vi config
+   91  cd ..
+   92  ls
+   93  pwd
+   94  cd terraform/
+   95  ls
+   96  more terraform.tfvars 
+   97  ls
+   98  mv terraform.tfvars terraform.tfvarsOLD
+   99  vi terraform.tfvars
+  100  ls
+  101  cat terraform*
+  102  ls
+  103  rm -rf terraform.tfvarsOLD 
+  104  ls
+  105  cd ..
+  106  cd .aws
+  107  ls
+  108  vi credentials
+  109  aws
+  110  aws help
+  111  aws ec2
+  112  aws ec2 hepl
+  113  aws ec2 describe-tags
+  114  ls
+  115  cd ..
+  116  cd terraform/
+  117  ls
+  118  cat terraform_varfile
+  119  ls
+  120  cat test_vm.tf 
+  121  cd ..
+  122  ssh-keygen -f /home/ubuntu/.ssh/id_rsa -t rsa -N ''
+  123  cd .ssh/
+  124  ls
+  125  cd ..
+  126  ls
+  127  sudo vi /etc/motd
+  128  ды
+  129  ls
+  130  sudo netstat -plantu
+  131  sudo service kibana enable
+  132  sudo update-rc.d kibana defaults 
+  133  sudo service elasticsearch start
+  134  sudo update-rc.d elasticsearch defaults 
+  135  shutdown -r -t 0
+  136  sudo shutdown -r -t 0
+  137  sudo netstat -plantu 
+  138  sudo netstat -plantu | grep 8088
+  139  sudo netstat -plantu
+  140  sudo /bin/systemctl daemon-reload
+  141  sudo /bin/systemctl enable kibana.service
+  142  sudo netstat -plantu
+  143  sudo systemctl stop kibana.service
+  144  sudo systemctl start kibana.service
+  145  sudo netstat -plantu
+  146  sudo shundown -r -t 0
+  147  sudo shutdown -r -t 0
+  148  curl -X GET http://localhost:9200
+  149  ls
+  150  cd terraform/
+  151  ls
+  152  cd /tmp/
+  153  ls
+  154  sudo apt-get update
+  155  sudo apt-get upgrate
+  156  sudo apt-get upgrade
+  157  ls
+  158  cd /
+  159  ls
+  160  cd ~
+  161  ls -la
+  162  ls Error: No matching indices found: No indices match pattern "filebeat-*"
+  163  ls .bash_history 
+  164  ls
+  165  logger "Hello from Automat-IT"
+  166  tail /var/log/messages
+  167  sudo tail /var/log/messages
+  168  sudo tail /var/log/message
+  169  cd /var/log/
+  170  ls
+  171  ll
+  172  cd ~
+  173  ls
+  174  ls -la /opt
+  175  cd /opt/
+  176  mkdir sources
+  177  sudo mkdir sources
+  178  sudo cp -r /home/ubuntu /opt/sources/
+  179  cd sources/
+  180  ls
+  181  sudo mv ./ubuntu/* ./
+  182  ls
+  183  sudo rm -rf ubuntu
+  184  ls
+  185  ls -la
+  186  cp -r /home/ubuntu/.aws ./
+  187  sudo cp -r /home/ubuntu/.aws ./
+  188  sudo cp -r /home/ubuntu/.ssh ./
+  189  ls -la
+  190  ls
+  191  cd ~
+  192  ls
+  193  df -h .
+  194  sudo su -
+  195  cd  /var/lib/jenkins/workspace/pipeline01
+  196  ll
+  197  ls web/
+  198  ls web/target/
+  199  cd ..
+  200  ll
+  201  cd ..
+  202  ll
+  203  cd jobs/
+  204  ll
+  205  cd pipeline01/
+  206  ll
+  207  $(( ( RANDOM % 10 )  + 1 ))
+  208  (( ( RANDOM % 10 )  + 1 ))
+  209  $(( ( RANDOM % 10 )  + 1 ))
+  210  x=$(( ( RANDOM % 10 )  + 1 ))
+  211  echo $x
+  212  x=$(( ( RANDOM % 27 )  + 1 ))
+  213  echo $x
+  214  x=$(( ( RANDOM % 27 )  + 1 ))
+  215  echo $x
+  216  clear
+  217  (( ( RANDOM % 27 )  + 1 ))
+  218  echo (( ( RANDOM % 27 )  + 1 ))
+  219  echo "$(( ( RANDOM % 27 )  + 1 ))"
+  220  clear
+  221  for i in {1..12}; do echo "$(( ( RANDOM % 27 )  + 1 ))"; done
+  222  cd /var/lib/jenkins/
+  223  ll
+  224  ls plugins/
+  225  ll
+  226  ls lo
+  227  ls logs/
+  228  cd jobs/
+  229  ll
+  230  cd test/
+  231  ll
+  232  cat config.xml 
+  233  ll
+  234  cat  builds/lastStableBuild
+  235  cat lastStable
+  236  cd builds/
+  237  l
+  238  ll
+  239  cd ..
+  240  ll
+  241  cat nextBuildNumber 
+  242  echo "50" > nextBuildNumber 
+  243  sudo echo "50" > nextBuildNumber 
+  244  sudo vi  nextBuildNumber 
+  245  cat nextBuildNumber 
+  246  sudo vi  nextBuildNumber 
+  247  ls -la
+  248  sudo service jenkins reload
+  249  sudo service jenkins force-reload
+  250  cat nextBuildNumber 
+  251  cd ..
+  252  ll
+  253  cd pipeline01/
+  254  ll
+  255  cd ..
+  256  ll
+  257  cd workspace/
+  258  ll
+  259  cd pipeline01
+  260  ll
+  261  /bin/mvn -Dmaven.test.failure.ignore clean package
+  262  mvn -Dmaven.test.failure.ignore clean package
+  263  sudo apt install maven
+  264  mvn -Dmaven.test.failure.ignore clean package
+  265  ll
+  266  cd web/
+  267  ll
+  268  cd target/
+  269  ll
+  270  cd ..
+  271  ll
+  272  cd ,,
+  273  cd ..
+  274  ll
+  275  cd web/
+  276  ll
+  277  cd target/
+  278  ll
+  279  cd ,,
+  280  cd ..
+  281  ll
+  282  cd ..
+  283  ll
+  284  find . -name *TEST*
+  285  ll
+  286  cd core/target/surefire-reports/
+  287  ll
+  288  vi TEST-clinic.programming.timetracker.core.TrackerCoreConfigTest.xml
+  289  vi ll
+  290  ll
+  291  sudo ssh-keygen 
+  292  cat /root/.ssh/id_rsa.pub
+  293  sudo cat /root/.ssh/id_rsa.pub
+  294  su - jenkins
+  295  sudo - jenkins
+  296  su jenkins
+  297  sudo passwd jenkins
+  298  su - jenkins
+  299  cd /tmp/
+  300  git clone https://github.com/elijb/jenkins.git
+  301  cd jenkins/
+  302  ll
+  303  git branch
+  304  git checkout -b feature01
+  305  git push
+  306  git checkout master
+  307  git log
+  308  git push
+  309  git checkout feature01 
+  310  jbt@301_ins MINGW64 ~
+  311  git push
+  312  cd ..
+  313  ll
+  314  git clone https://github.com/elijb/jb-jenkins.git
+  315  ll
+  316  git branch
+  317  cd jb-jenkins/
+  318  git branch
+  319  git fetch all
+  320  git fetch
+  321  git branch
+  322  git branch -r
+  323  git checkout -b feature09
+  324  git push
+  325  touch 1
+  326  git add .
+  327  git commit -m "test"
+  328  git push
+  329  git checkout master
+  330  git checkout -b dev
+  331  git push
+  332  docker ps
+  333  ssh root@52.59.167.56
+  334  sudo su
+  335  vim /etc/docker/daemon.json
+  336  sudo vim /etc/docker/daemon.json
+  337  ps -ef |grep docker
+  338  kill -HUP 1061
+  339  sudo kill -HUP 1061
+  340  ps -ef |grep docker
+  341  docker login -u 'admin' -p 'admin123' 127.0.0.1:8082
+  342  ps -ef
+  343  ll /var/lib/jenkins/workspace/Pipeline\ Script/
+  344  ll /var/lib/jenkins/workspace/Pipeline\ Script/web/
+  345  ll /var/lib/jenkins/workspace/Pipeline\ Script/web/src/
+  346  ll /var/lib/jenkins/workspace/Pipeline\ Script/web/src/main/
+  347  ll /var/lib/jenkins/workspace/Pipeline\ Script/web/src/main/webapp/
+  348  ll /var/lib/jenkins/workspace/Pipeline\ Script/web/src/main/webapp/WEB-INF/web.xml 
+  349  ll /var/lib/jenkins/workspace/Pipeline\ Script/
+  350  cd /var/lib/jenkins/workspace/Pipeline\ Script/
+  351  cat Dockerfile 
+  352  ll /usr/local/tomcat/webapps/
+  353  ll
+  354  docker images 
+  355  docker run -it oifergan80/time-tracker
+  356  netstat -l
+  357  netstat -Ln
+  358  netstat -L
+  359  netstat -l
+  360  ll /var/lib/jenkins/workspace/
+  361  ll /var/lib/jenkins/workspace/Pipeline\ Script/
+  362  cd /var/lib/jenkins/workspace/Pipeline\ Script/
+  363  git log
+  364  ll
+  365  git branch
+  366  git branch -a
+  367  vim time-tracker/
+  368  vim web/src/main/webapp/index.jsp 
+  369  ll ~/
+  370  vim ~/docker_pull_run_playbook.yml
+  371  vim ~/docker_push_playbook.yml 
+  372  ping github.com
+  373  cd /tmp/
+  374  git clone https://github.com/oifergan/Pcap_Analyzer-Nginx-Docker.git
+  375  git clone https://github.com/zivkashtan/course.git
+  376  cat /etc/resolv.conf 
+  377  docker ps
+  378  ls -l /var/lib/jenkins/workspace/pcap_analyzer/
+  379  ll
+  380  ls -l /var/lib/jenkins/workspace/pcap_analyzer/
+  381  docker ps
+  382  docker images
+  383  docker ps -a
+  384  docker rm -v cocky_dijkstra dreamy_kirch
+  385  docker run -d -p 8081:80 oifergan:Pcap_Analyzer-Nginx-Docker
+  386  docker ps -a
+  387  docker rm -v thirsty_edison
+  388  docker run -d -p 8981:80 oifergan:Pcap_Analyzer-Nginx-Docker
+  389  docker ps
+  390  ps -ef
+  391  docker ps
+  392  docker stop optimistic_zhukovsky
+  393  docker run -d -p 80:80 oifergan:Pcap_Analyzer-Nginx-Docker
+  394  vim /etc/ansible/hosts 
+  395  docker run -d -p 81:80 oifergan80/time-tracker:latest 
+  396  docker ps
+  397  docker stop focused_joliot && docker rm -v focused_joliot
+  398  docker run -d -p 81:8080 oifergan80/time-tracker:latest 
+  399  docker ps
+  400  top -H
+  401  docker ps
+  402  docker stop objective_mestorf keen_bhaskara 
+  403  docker rm -v objective_mestorf keen_bhaskara
+  404  docker run -d -p 80:8080 oifergan80/time-tracker:latest 
+  405  docker ps
+  406  docker ps -a
+  407  docker rm -v angry_hawking optimistic_zhukovsky
+  408  docker ps -a
+  409  docker run -d -p 80:8080 oifergan80/time-tracker:latest 
+  410  docker ps -a
+  411  docker ps
+  412  docker logs
+  413  docker logs gracious_liskov 
+  414  docker exec gracious_liskov ps -ef
+  415  docker ps
+  416  docker ps -a
+  417  docker rm -v gracious_liskov
+  418  chroot 
+  419  unshare 
+  420  ssh ubuntu@18.195.242.235
+  421  docker ps
+  422  docker images 
+  423  v
+  424  docker ps
+  425  uname -a
+  426  cat /etc/debian_version 
+  427  cat /etc/lsb-release 
+  428  docker pull ubuntu:14.04
+  429  docker run -it ubuntu:14.04 /bin/bash
+  430  docker run -it ubuntu:16.04 /bin/bash
+  431  ifconfig 
+  432  docker ps
+  433  docker images 
+  434  docker ps
+  435  docker stop 8a1b0556d30b
+  436  docker run -it ubuntu:16.04 /bin/bash
+  437  docker ps -a
+  438  docker ps -a|awk '{print $NF}'
+  439  docker ps -a|awk '{print $NF}'|grep -v NAMES
+  440  for i in $( docker ps -a|awk '{print $NF}'|grep -v NAMES) ; echo $i ; done
+  441  for i in $( docker ps -a|awk '{print $NF}'|grep -v NAMES) ;do  echo $i ; done
+  442  for i in $( docker ps -a|awk '{print $NF}'|grep -v NAMES) ;do  echo $i && docker stop $i ; done
+  443  for i in $( docker ps -a|awk '{print $NF}'|grep -v NAMES) ;do  docker stop $i ; done
+  444  docker ps
+  445  docker ps -a
+  446  for i in $( docker ps -a|awk '{print $NF}'|grep -v NAMES) ;do  docker stop $i && docker rm -v $i ; done
+  447  docker images 
+  448  docker run -it ubuntu:16.04 /bin/bash
+  449  docker ps
+  450  docker ps -a
+  451  docker rm -v determined_mirzakhani
+  452  docker run -it ubuntu:16.04 -name ubuntu_16 -h ubuntu_16 /bin/bash
+  453  docker run -it --name ubuntu_16 --hostname ubuntu_16 ubuntu:16.04  /bin/bash
+  454  history 
+  455  docker attach ubuntu_16 
+  456  sudo tcpdump -i eth0 -nn -c 10
+  457  ifconfig 
+  458  sudo tcpdump -i eth0 -nn -c 10 -w 10packets.pcap
+  459  ls -l
+  460  docker cp 10packets.pcap ubuntu_16:/tmp/
+  461  docker attach ubuntu_16 
+  462  docker commit ubuntu_16 ubuntu16_ndpi:1
+  463  docker images
+  464  docker exec ubuntu_16 ls -l
+  465  docker exec ubuntu_16 /nDPI/example/ndpiReader -i /tmp/10packets.pcap
+  466  docker images 
+  467  ps -ef
+  468  docker ps -a
+  469  for i in $( docker ps -a|awk '{print $NF}'|grep -v NAMES) ;do  docker stop $i && docker rm -v $i ; done
+  470  history 
+  471  history > history_16_12.txt
