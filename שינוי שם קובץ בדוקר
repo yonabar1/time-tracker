@@ -1,0 +1,1 @@
+ docker run -it --name ubuntu_16 --hostname ubuntu_16 ubuntu:16.04 /bin/bash - יוצר משנה לי את השם של קובץ 
